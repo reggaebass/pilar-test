@@ -1,5 +1,7 @@
 .navigation {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+  .disabled{
+    opacity: .5;
+  }
 }

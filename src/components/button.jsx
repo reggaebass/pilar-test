@@ -1,11 +1,13 @@
 import '../styles/button.scss';
 
-export default function Button({text}) {
+export default function Button({text, url}) {
   return (
     <>
-      <button>
-        {text}
-      </button>
+      <a href={url}>
+        <button>
+          {text}
+        </button>
+      </a>
     </>
   )
 }
