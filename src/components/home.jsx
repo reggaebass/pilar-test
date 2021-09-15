@@ -4,10 +4,12 @@ import Dropdown from './dropdown'
 import Button from './button'
 
 export default function Home() {
-  const [selectValue, setSelectValue] = useContext(SelectContext);
+  const { select, tabs } = useContext(SelectContext);
+  const [selectValue, setSelectValue] = select;
   const isDefault = selectValue === "default";
   return (
     <div className="landing">
+      <p className="center instructions" >Select Analysis Pipeline Version</p>
       <Dropdown />
       <div className={`center action ${isDefault ? 'hidden' : ''}`}>
         <label>PIVAT {selectValue} User Manual</label>

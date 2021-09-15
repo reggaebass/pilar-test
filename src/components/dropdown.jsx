@@ -5,7 +5,8 @@ import '../styles/dropdown.scss';
 
 export default function Dropdown(){
   const [dropdownOptions, setDropdownOptions] = useState();
-  const [selectValue, setSelectValue] = useContext(SelectContext);
+  const { select } = useContext(SelectContext);
+  const [selectValue, setSelectValue] = select;
 
   const options = [
     {value: "AP 2021.1", label: "ap-2021-1"},

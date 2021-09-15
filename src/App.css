@@ -21,3 +21,9 @@ body {
 .hidden {
   display: none;
 }
+
+.instructions {
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}

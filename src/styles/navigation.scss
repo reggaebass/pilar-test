@@ -1,7 +1,9 @@
 .navigation {
   display: flex;
   justify-content: space-evenly;
+  cursor: pointer;
   .disabled{
     opacity: .5;
+    cursor: default;
   }
 }

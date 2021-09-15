@@ -1,0 +1,31 @@
+.analysisForm {
+  width: 50vw;
+  margin-right: auto;
+  margin-left: auto;
+  .formContent {
+    display: flex;
+    justify-content: space-evenly;
+    @media only screen and (max-width: 1300px) {
+      display: block;
+      text-align: center;
+      span {
+        margin-bottom: 15px;
+        display: block;
+        label {
+          text-align: left;
+          display: inline;
+          margin-right: 10px;
+        }
+      }
+    }
+    label {
+      display: block;
+    }
+    input, .pipelineValue {
+      font-size: 24px;
+    }
+  }
+  .formSubmit a {
+    width: 200px;
+  }
+}
