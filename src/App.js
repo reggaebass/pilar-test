@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Content from './components/content';
 import SelectProvider from './context/selectContext'
 import './App.css';

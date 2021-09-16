@@ -4,7 +4,7 @@ import { SelectContext } from '../context/selectContext';
 import '../styles/navigation.scss';
 
 export default function Navigation() {
-  const { select, tabs, formResult } = useContext(SelectContext);
+  const { select, tabs } = useContext(SelectContext);
   const [selectValue, setSelectValue] = select; 
   const [tab, setTab] = tabs; 
   const isDefault = selectValue === "default";

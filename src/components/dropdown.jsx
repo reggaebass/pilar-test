@@ -4,33 +4,37 @@ import '../styles/dropdown.scss';
 
 
 export default function Dropdown(){
-  const [dropdownOptions, setDropdownOptions] = useState();
+  const [options, setOptions] = useState([]);
   const { select } = useContext(SelectContext);
   const [selectValue, setSelectValue] = select;
 
-  const options = [
-    {value: "AP 2021.1", label: "ap-2021-1"},
-    {value: "AP 2021.2", label: "ap-2021-2"},
-    {value: "AP 2022.2", label: "ap-2022-1"}
-  ]
+  const staticOptions = {
+    "data":[{
+        "name": "AP 2021.1", "value": "ap-2021-1"
+      },
+      {
+        "name": "AP 2021.2", "value": "ap-2021-2"
+      },
+      {
+        "name": "AP 2022.2", "value": "ap-2022-1"
+      }]
+  }
 
-  // const handleSelectChange = (e) => {setSelectValue((e.target.value))}
-  // useEffect(() => {
-  //   const apiUrl = 'https://pillar.free.beeceptor.com/api/pulldown';
-
-  //   const getData = async () => {
-  //     try {
-  //       const response = await fetch(apiUrl);
-  //       const json = await response.json();
-  //       setDropdownOptions(json.data.name)
-  //       console.log(dropdownOptions);
-  //     } catch {
-  //       console.log("error")
-  //     }
-  //   }
-    
-  //   getData();   
-  // }, [dropdownOptions])
+  useEffect(() => {
+    const apiUrl = 'https://pillar.free.beeceptor.com/api/pulldown';
+    fetch(apiUrl)
+    .then(response => {
+      if(response.ok) { 
+        return response.json()
+      } else {
+        // prevents app from breaking on 429 response
+        return staticOptions;
+      }
+    })
+    .then(d => {
+      setOptions(d.data);
+    })
+  }, [])
   return(
     <>
     <div className="dropdown center">
@@ -40,7 +44,7 @@ export default function Dropdown(){
       <option value="default" >Choose Pipeline</option>
         {options.map(o => {
           return (
-            <option key={o.label} value={o.value}>{o.value}</option>
+            <option key={o.name} value={o.value}>{o.value}</option>
           )
         })}
       </select>      
@@ -48,4 +52,3 @@ export default function Dropdown(){
     </>
   )
 }
-

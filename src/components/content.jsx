@@ -6,7 +6,7 @@ import Analysis from './analysis';
 import Results from './results';
 
 export default function Content() {
-  const { select, tabs } = useContext(SelectContext);
+  const { tabs } = useContext(SelectContext);
   const [tab, setTab] = tabs;
   return (
     <>

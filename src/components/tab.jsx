@@ -1,4 +1,4 @@
-import '../styles/tab.scss'
+import '../styles/tab.scss';
 
 
 export default function Tab({name}) {

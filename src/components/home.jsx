@@ -1,10 +1,10 @@
 import React, { useContext }from 'react';
 import { SelectContext } from '../context/selectContext';
-import Dropdown from './dropdown'
-import Button from './button'
+import Dropdown from './dropdown';
+import Button from './button';
 
 export default function Home() {
-  const { select, tabs } = useContext(SelectContext);
+  const { select } = useContext(SelectContext);
   const [selectValue, setSelectValue] = select;
   const isDefault = selectValue === "default";
   return (

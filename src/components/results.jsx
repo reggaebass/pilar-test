@@ -6,7 +6,6 @@ export default function Analysis() {
   const { formResult } = useContext(SelectContext);
   const [result, setResult] = formResult;
   const submitted = result.length > 0;
-  console.log(result)
   return (
     <>
       {submitted ? (

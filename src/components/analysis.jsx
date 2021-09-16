@@ -1,6 +1,6 @@
 import React, { useContext, useState }from 'react';
 import { SelectContext } from '../context/selectContext';
-import Button from './button'
+import Button from './button';
 import '../styles/analysis.scss';
 
 
@@ -15,7 +15,7 @@ export default function Analysis() {
   function HandleSubmit (e) {
     e.preventDefault();
     setResult([name, path, selectValue]);
-    setTab("results")
+    setTab("results");
   }
 
   return (
