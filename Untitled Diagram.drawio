@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-17T19:37:53.415Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="pclim3ryep2fKZnv8LGY" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-18T13:15:59.746Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="ofkffV3JPEGpbVlwrWZU" version="21.3.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1383" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -119,7 +119,7 @@
             <mxPoint x="910" y="202" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r_vhM-KLNuA45PHsS9CR-26" value="Admin" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="r_vhM-KLNuA45PHsS9CR-26" value="User Management" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="850" y="202" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r_vhM-KLNuA45PHsS9CR-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="r_vhM-KLNuA45PHsS9CR-28" edge="1">
@@ -128,7 +128,7 @@
             <mxPoint x="1000" y="322" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r_vhM-KLNuA45PHsS9CR-28" value="User Management" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="r_vhM-KLNuA45PHsS9CR-28" value="User Admin" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="930" y="321" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="r_vhM-KLNuA45PHsS9CR-31" value="Permission/Role&lt;br&gt;Management" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
